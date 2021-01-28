@@ -1,0 +1,34 @@
+{
+  "mode": "test",
+  "addr": ":80",
+  "metrics": {
+    "addr": ":23333"
+  },
+  "debug": {
+    "global_enable": true
+  },
+  "cors": {
+    "allowAllOrigins": true,
+    "allowOrigins": [],
+    "allowMethods": ["GET", "POST", "PUT", "HEAD", "DELETE", "OPTIONS"],
+    "allowHeaders": [
+      "Origin",
+      "Content-Length",
+      "Content-Type",
+      "X-B3-Flags",
+      "X-B3-Sampled",
+      "X-B3-Spanid",
+      "X-B3-Traceid",
+      "X-B3-Spanparentid",
+      "token",
+      "appId",
+      "deviceId",
+      "sDeviceId",
+      "accessToken"
+    ]
+  },
+  "db": {
+    "driver": "mysql",
+    "dsn": "root:root@tcp(127.0.0.1:3306)/work-meow"
+  }
+}
